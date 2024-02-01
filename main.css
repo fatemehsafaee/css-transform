@@ -1,0 +1,297 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.section{
+    width: 100%;
+    height: max-content;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.section .d1{
+    width: 14%;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 20px; 
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.312);
+}
+
+.section .d2{
+    background-color: rgb(146, 141, 149);
+    border: 0;
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .d2 :first-child{
+    background-color: rgba(101, 43, 226, 0.471);
+    width: 90px;
+    height: 90px;
+}
+
+
+
+
+/* *************************sec1********************* */
+
+.section1 .d2 :first-child{
+    transition-property: transform;
+    transition-duration: 300ms;
+    /* transition-delay: 0.5s; */
+}
+.section1 .d13:hover  {
+    transform: rotate(45deg);
+}
+
+
+.section1 .d23:hover  {
+    transform: scaleY(0.7);   
+}
+
+.section1 .d33:hover  {
+    transform: scaleX(0.7); 
+}
+
+.section1 .d43:hover  {
+    transform: scale(2);
+}
+
+.section1 .d53:hover  {
+    transform: scaleX(2);
+}
+/* *************************sec2*********************************** */
+.section2 .d2 :first-child{
+    transition-property: transform;
+    transition-duration: 300ms;
+    /* transition-delay: 0.5s; */
+}
+.section2 .d13:hover  {
+    transform: scaleY(2);
+}
+.section2 .d23:hover  {
+    transform: skewX(50deg);
+}
+
+.section2 .d33:hover  {
+    transform: skewY(50deg);
+}
+
+.section2 :nth-child(4):hover .d43{
+    transform: translate(50px, 10px);
+}
+
+
+.section2 :nth-child(5):hover .d53{
+    transform: translateX(50px);
+}
+
+/* **********************sec3*********************** */
+.section3 .d2 :first-child{
+    transition-property: transform;
+    transition-duration: 300ms;
+    /* transition-delay: 0.5s; */
+}
+.section3 :nth-child(1):hover .d13{
+    transform: translateY(50px);
+}
+
+.section3 :nth-child(2):hover .d23{
+    transform: skewY(50deg) scale(1.5) translate(15px, -15px);
+}
+
+/* *********************sec4*************************** */
+.section4 .d2 :first-child{
+    transition-property: transform;
+    transition-duration: 300ms;
+    /* transition-delay: 0.5s; */
+}
+.section4 :nth-child(1):hover .d13{
+    transform: perspective(100px) rotateX(40deg) ;
+}
+.section4 :nth-child(2):hover .d23{
+    transform: perspective(100px) rotateY(40deg) ;
+}
+
+/* *********************sec5*************************** */
+.section5 .d13{
+    transform-origin: top right;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section5 :nth-child(1):hover .d13{
+    transform: rotate(45deg);
+}
+/* ***************************** */
+.section5 .d23{
+    transform-origin: bottom left;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section5 :nth-child(2):hover .d23{
+    transform: rotate(45deg);
+}
+
+/* **************************** */
+.section5 .d33{
+    transform-origin: bottom;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section5 :nth-child(3):hover .d33{
+    transform: perspective(100px) rotateX(30deg) ;
+}
+
+/* **************************** */
+.section5 .d43{
+    transform-origin: top;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section5 :nth-child(4):hover .d43{
+    transform: perspective(300px) rotateX(60deg) ;
+}
+
+/* **************************** */
+.section5 .d53{
+    transform-origin: left;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section5 :nth-child(5):hover .d53{
+    transform: perspective(300px) rotateY(50deg) ;
+}
+
+/* ***************************sec6********************* */
+.section6 .d13{
+    transform-origin: right;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section6 :nth-child(1):hover .d13{
+    transform: perspective(300px) rotateY(60deg) ;
+}
+
+/* ************************* */
+.section6 .d23{
+    transform-origin: top right;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section6 :nth-child(2):hover .d23{
+    transform: scale(2);
+}
+/* ************************* */
+.section6 .d33{
+    transform-origin: bottom left;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section6 :nth-child(3):hover .d33{
+    transform: scale(2);
+}
+
+/* ************************* */
+.section6 .d43{
+    transform-origin: right;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section6 :nth-child(4):hover .d43{
+    transform: scaleX(2);
+}
+/* ************************* */
+.section6 .d53{
+    transform-origin: left;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section6 :nth-child(5):hover .d53{
+    transform: scaleX(2);
+}
+
+/* *************************sec7*********************** */
+.section7 .d13{
+    transform-origin: top;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section7 :nth-child(1):hover .d13{
+    transform: scaleY(2);
+}
+/* ************************** */
+.section7 .d23{
+    transform-origin: bottom;
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.section7 :nth-child(2):hover .d23{
+    transform: scaleY(2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************ */
+
+/* .a1{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(187, 208, 28);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a2{
+    background-color: gray;
+    width: 80px;
+    height: 80px;
+}
+
+.a3{
+    background-color: rgba(100, 43, 226, 0.612);
+    width: 80px;
+    height: 80px;
+    transition: width, height 0 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a3:hover{
+    width: 160px;
+    height: 160px;
+} */
+
